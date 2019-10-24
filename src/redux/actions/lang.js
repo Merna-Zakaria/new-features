@@ -5,7 +5,7 @@ export const setCurrentLang = lang  => {
     return{ type: types.SET_CURRENT_LANG, lang: lang };
 }
 
-export const getCurrentLang = ()  => {
-    console.log("hello from actions")
-    return { type: types.GET_CURRENT_LANG };
-};
+// export const getCurrentLang = ()  => {
+//     console.log("hello from actions")
+//     return { type: types.GET_CURRENT_LANG };
+// };

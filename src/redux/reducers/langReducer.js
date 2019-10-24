@@ -11,8 +11,8 @@ export default function locale(state = initialState, action) {
                 ...state,
                 lang: action.lang
             };
-        case types.GET_CURRENT_LANG:
-            return state;
+        // case types.GET_CURRENT_LANG:
+        //     return state;
         default:
             return state;
     }

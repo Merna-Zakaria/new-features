@@ -22,17 +22,8 @@ class  Header extends React.Component {
     console.log('logout')
   }
 
-//   renderLangSwitcher = () => {
-//     return (
-//         <div className="m-3">
-//             <button className="mr-3" id="en" onClick={() => this.switcher('en')}>English</button>
-//             <button  className="mr-3" id="ar" onClick={() => this.switcher('ar')}>العربية</button>
-//         </div>
-//     )
-// }
-
  render () {
-console.log(this.props.intl)
+  console.log(this.props.intl)
   const { messages } = this.props.intl;
 
   return (
@@ -62,30 +53,13 @@ console.log(this.props.intl)
       </ul>
     </div>
   );
-
-
-  // const { messages } = this.props.intl;
-  // return (
-  //     // <Container className="p-3">
-  //     <div>
-  //     {this.renderLangSwitcher()}
-  //             <Link className="mr-3" to='/'>{messages.home}</Link>
-  //             <Link className="mr-3" to='public'>{messages.public}</Link>
-  //             <Link className="mr-3" to='private'>{messages.private}</Link>
-  //             <button className="mr-3" variant="primary" onClick={this.login}>{messages.login}</button>
-  //             <button className="mr-3" variant="danger" onClick={this.logout}>{messages.logout}</button>
-  //         </div>
-  //     // </Container>
-  // )
  }
 };
 
-// export default Header;
-
-const mapStateToProps = state => {
-  return { lang: state.locale.lang }
-}
+// const mapStateToProps = state => {
+//   return { lang: state.locale.lang }
+// }
 
 const HeaderComponent = injectIntl(Header);
 
-export default connect(mapStateToProps, { setCurrentLang })(HeaderComponent);
+export default connect(null, { setCurrentLang })(HeaderComponent);

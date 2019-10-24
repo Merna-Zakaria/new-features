@@ -11,4 +11,4 @@ export const createPost = 'CREATE_POST';
 export const createPostSAGA = 'CREATE_POST_SAGA';
 
 export const SET_CURRENT_LANG = 'SET_CURRENT_LANG';
-export const GET_CURRENT_LANG = 'GET_CURRENT_LANG';
+// export const GET_CURRENT_LANG = 'GET_CURRENT_LANG';
